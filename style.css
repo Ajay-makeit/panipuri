@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#main_nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    padding: 1.5rem 0rem;
+}
+
+
+.nav_links a{
+display: inline;
+margin-left: 0rem;
+flex-direction: row;
+text-decoration: none;
+color: snow;
+transition: all 0.4s ease 0s;
+padding: 1.5rem 1rem;
+font-family: cursive,'Times New Roman', Times, serif;
+font-size: 16px;
+
+}
+
+.nav_links a:hover{
+    background-color: snow;
+    color: rgba(0, 0, 0, 1);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 17px;
+}
+
+.nav_toggleimg{
+    display: none;
+    border-radius: 10px;
+    margin-top: 2rem;
+    margin-bottom: 0;
+    bottom: 0;
+
+}
+
+.btn{
+    width: 2rem;
+    height: 2rem;
+    margin-left: 1rem;
+    opacity: 0;
+}
+
+.bars{
+    display: none;
+    width: 2rem;
+    height: 0.3rem;
+    margin: 0.2rem 0rem 0.1rem 1rem;
+    background-color: snow;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.logo{
+    margin-left: 0.1rem;
+    color: white;
+    font-family: cursive,sans-serif,Arial, Helvetica;
+    font-size: 20px;
+}
+.logo caption{
+    font-size: 10px !important;
+}
+
+@media  screen and (max-width: 600px)
+ {
+    .bars{
+        display: block;
+    }
+
+    .nav_links
+    {
+        display: none;
+         
+        margin-top: 2rem;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav_links.active{
+        display: flex !important;
+    }
+    
+    
+    .nav_toggleimg.active{
+        display: flex;
+        height: auto;
+        width: 100%;
+    }
+
+    .nav_links a{
+        padding: 0.3rem ;
+        display: block;
+        text-align: left;
+        border-radius: 5px;
+    }
+       
+
+
+}
+
+
+@media screen and (max-width:300px){
+    .bars{
+        display: block;
+        width: 1.5rem;
+        height: 0.2rem;
+        margin-top: 0.1rem;
+        margin-bottom: 0.1rem;
+    }
+
+    #main_nav{
+        padding: 0.5rem 0rem;
+    }
+
+    .logo{
+        font-size: 12px;
+        
+    }
+
+    .nav_links.active{
+        display: flex !important;
+    }
+    
+    
+    .nav_toggleimg.active{
+        display: flex;
+        height: 100px;
+    }
+
+    .nav_links a{
+        padding: 0.3rem ;
+        display: block;
+        text-align: left;
+        border-radius: 5px;
+    }
+}
+
+
+
+
